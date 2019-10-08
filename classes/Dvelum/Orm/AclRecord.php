@@ -21,6 +21,7 @@ declare(strict_types=1);
 namespace Dvelum\Orm;
 
 use Dvelum\Orm\Record\Acl;
+use Dvelum\Orm\Record\DataModelAcl;
 use Dvelum\Orm\Record\ErrorMessage;
 
 class AclRecord extends Record
@@ -48,6 +49,17 @@ class AclRecord extends Record
                 $this->checkCanCreate();
             }
         }
+    }
+
+    /**
+     * @return DataModelAcl
+     */
+    public function getDataModel(): DataModelAcl
+    {
+        if (empty($this->dataModel)) {
+            $this->dataModel = new DataModelAcl();
+        }
+        return $this->dataModel;
     }
 
     /**
