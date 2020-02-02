@@ -1,7 +1,7 @@
 {
   "name": "dvelum/module-acl",
   "version": "3.0.0-dev",
-  "type": "dvelum-module",
+  "type": "dvelum3-module",
   "description": "ACL module for DVelum",
   "keywords": ["dvelum","ACL"],
   "homepage": "https://github.com/dvelum/module-acl",
@@ -17,7 +17,7 @@
     "source": "https://github.com/dvelum/module-acl"
   },
   "require": {
-    "php":">=7.2",
+    "php":">=7.3",
     "oomphinc/composer-installers-extender": "^1.1",
     "dvelum/dvelum": ">=3.0.0"
   }
