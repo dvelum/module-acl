@@ -1,7 +1,7 @@
 <?php
 return [
     'id' => 'dvelum-module-acl',
-    'version' => '3.0.0',
+    'version' => '3.0.1',
     'author' => 'Kirill Yegorov',
     'name' => 'DVelum ACL',
     'configs' => './configs',
